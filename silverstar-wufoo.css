@@ -1,83 +1,57 @@
 /* - - - - - - - - - - - - - - - - - - - - -
-
  Title : SilverStar Mountain Resort — Wufoo Custom CSS
  URL : skisilverstar.com
  Last Updated : 2026
-
 - - - - - - - - - - - - - - - - - - - - - */
 
 
 /* ============================================================
-   CONTAINER & FORM CHROME
+   CONTAINER & CHROME
    ============================================================ */
 
-#container {
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
+body#public #container {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-#logo {
-  display: none;
+body#public h1#logo {
+  display: none !important;
 }
 
-.wufoo {
-  background: transparent;
+/* Form title and description */
+body#public .wufoo .info h2 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #3F3F3F !important;
+  margin-bottom: 6px !important;
 }
 
-/* Header — form title and description */
-.wufoo .info {
-  border-bottom: 1px solid #D9D9D9;
-  padding-bottom: 16px;
-  margin-bottom: 20px;
+body#public .wufoo .info div {
+  font-size: 16px !important;
+  color: #3F3F3F !important;
 }
 
-.wufoo .info h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #3F3F3F;
-  margin-bottom: 6px;
-}
-
-.wufoo .info div {
-  font-size: 16px;
-  color: #3F3F3F;
+body#public .wufoo .info {
+  border-bottom: 1px solid #D9D9D9 !important;
+  padding-bottom: 16px !important;
+  margin-bottom: 20px !important;
+  background: transparent !important;
 }
 
 /* Section headings */
-.wufoo .section h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #3F3F3F;
-  background: transparent;
-  margin-bottom: 4px;
+body#public .wufoo .section h3 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #3F3F3F !important;
+  background: transparent !important;
+  margin-bottom: 4px !important;
 }
 
-.wufoo .section div {
-  font-size: 15px;
-  color: #3F3F3F;
-}
-
-
-/* ============================================================
-   FORM LIST & LIST ITEMS
-   ============================================================ */
-
-.wufoo ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.wufoo li {
-  margin-bottom: 14px;
-  padding: 0;
-}
-
-/* Focused state — highlight active field row */
-.wufoo .focused {
-  background: transparent;
+body#public .wufoo .section div {
+  font-size: 15px !important;
+  color: #3F3F3F !important;
 }
 
 
@@ -85,35 +59,31 @@
    LABELS
    ============================================================ */
 
-.wufoo label.desc,
-.wufoo legend.desc {
-  display: block;
-  font-size: 16px;
-  font-weight: 700;
-  color: #3F3F3F;
-  margin-bottom: 5px;
+body#public .wufoo label.desc,
+body#public .wufoo legend.desc {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #3F3F3F !important;
+  margin-bottom: 5px !important;
 }
 
-/* Sub-labels (First, Last, MM, DD etc.) */
-.wufoo li span label,
-.wufoo li div label {
-  font-size: 13px;
-  color: #3F3F3F;
-  margin-top: 4px;
-  display: block;
+body#public .wufoo li span label,
+body#public .wufoo li div label {
+  font-size: 13px !important;
+  color: #3F3F3F !important;
+  margin-top: 4px !important;
+  display: block !important;
 }
 
-/* Required asterisk */
-.wufoo .req {
-  color: #DE3D95;
-  font-weight: 700;
+body#public .wufoo .req {
+  color: #DE3D95 !important;
+  font-weight: 700 !important;
 }
 
-/* Choice labels (radio / checkbox) */
-.wufoo label.choice {
-  font-size: 16px;
-  color: #3F3F3F;
-  margin-left: 6px;
+body#public .wufoo label.choice {
+  font-size: 16px !important;
+  color: #3F3F3F !important;
+  margin-left: 6px !important;
 }
 
 
@@ -121,42 +91,38 @@
    INPUTS, TEXTAREAS, SELECTS
    ============================================================ */
 
-.wufoo input.text,
-.wufoo textarea.textarea,
-.wufoo select.select {
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  color: #3F3F3F;
-  font-size: 16px;
-  padding: 10px 15px;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  appearance: none;
-  transition: border-color 0.15s ease;
+body#public .wufoo input.text,
+body#public .wufoo textarea.textarea,
+body#public .wufoo select.select {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0 !important;
+  color: #3F3F3F !important;
+  font-size: 16px !important;
+  padding: 10px 15px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  box-shadow: none !important;
 }
 
-.wufoo input.text:focus,
-.wufoo textarea.textarea:focus,
-.wufoo select.select:focus {
-  border-color: #00B6EA;
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 182, 234, 0.15);
+body#public .wufoo input.text:focus,
+body#public .wufoo textarea.textarea:focus,
+body#public .wufoo select.select:focus {
+  border-color: #00B6EA !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(0, 182, 234, 0.15) !important;
 }
 
-/* Textarea height */
-.wufoo textarea.textarea {
-  min-height: 120px;
-  resize: vertical;
+body#public .wufoo textarea.textarea {
+  min-height: 120px !important;
+  resize: vertical !important;
 }
 
-/* Select arrow */
-.wufoo select.select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%233F3F3F' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
+/* Focused row */
+body#public .wufoo li.focused {
+  background: transparent !important;
 }
 
 
@@ -164,19 +130,20 @@
    INSTRUCTIONS
    ============================================================ */
 
-.wufoo .instruct {
-  background: #EBEFF5;
-  border: none;
-  border-left: 3px solid #00B6EA;
-  border-radius: 0;
-  padding: 10px 14px;
-  margin-top: 6px;
+body#public .wufoo p.instruct,
+body#public .wufoo .instruct {
+  background: #EBEFF5 !important;
+  border: none !important;
+  border-left: 3px solid #00B6EA !important;
+  border-radius: 0 !important;
+  padding: 10px 14px !important;
+  margin-top: 6px !important;
 }
 
-.wufoo .instruct small {
-  font-size: 14px;
-  color: #3F3F3F;
-  line-height: 1.5;
+body#public .wufoo .instruct small {
+  font-size: 14px !important;
+  color: #3F3F3F !important;
+  line-height: 1.5 !important;
 }
 
 
@@ -184,19 +151,13 @@
    RADIO & CHECKBOX
    ============================================================ */
 
-.wufoo input.radio,
-.wufoo input.checkbox {
-  accent-color: #00B6EA;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.wufoo .col span {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
+body#public .wufoo input.radio,
+body#public .wufoo input.checkbox {
+  accent-color: #00B6EA !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
 }
 
 
@@ -204,27 +165,24 @@
    SUBMIT BUTTON
    ============================================================ */
 
-.wufoo input.btTxt.submit {
-  background: #00B6EA;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 12px 24px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-  transition: background 0.15s ease;
-  display: inline-block;
+body#public .wufoo input.btTxt.submit,
+body#public .wufoo input#saveForm {
+  background: #00B6EA !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 12px 24px !important;
+  cursor: pointer !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  box-shadow: none !important;
 }
 
-.wufoo input.btTxt.submit:hover {
-  background: #DE3D95;
-}
-
-.wufoo input.btTxt.submit:active {
-  background: #00B6EA;
+body#public .wufoo input.btTxt.submit:hover,
+body#public .wufoo input#saveForm:hover {
+  background: #DE3D95 !important;
 }
 
 
@@ -232,9 +190,11 @@
    BUTTONS ROW
    ============================================================ */
 
-.wufoo li.buttons {
-  margin-top: 20px;
-  padding-top: 0;
+body#public .wufoo li.buttons {
+  margin-top: 20px !important;
+  padding-top: 0 !important;
+  background: transparent !important;
+  border: none !important;
 }
 
 
@@ -242,24 +202,24 @@
    ERROR STATES
    ============================================================ */
 
-.wufoo .errBoxHead,
-.wufoo .errBoxBody {
-  background: #fff0f5;
-  border: 1px solid #DE3D95;
-  border-radius: 0;
-  color: #3F3F3F;
-  padding: 10px 14px;
-  margin-bottom: 14px;
-  font-size: 15px;
+body#public .wufoo .errBoxHead,
+body#public .wufoo .errBoxBody {
+  background: #fff0f5 !important;
+  border: 1px solid #DE3D95 !important;
+  border-radius: 0 !important;
+  color: #3F3F3F !important;
+  padding: 10px 14px !important;
+  margin-bottom: 14px !important;
+  font-size: 15px !important;
 }
 
-.wufoo .field.error {
+body#public .wufoo .field.error {
   border-color: #DE3D95 !important;
 }
 
-.wufoo .error small {
-  color: #DE3D95;
-  font-size: 13px;
-  display: block;
-  margin-top: 4px;
+body#public .wufoo .error small {
+  color: #DE3D95 !important;
+  font-size: 13px !important;
+  display: block !important;
+  margin-top: 4px !important;
 }
