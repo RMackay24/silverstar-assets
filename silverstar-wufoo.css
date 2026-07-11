@@ -4,222 +4,90 @@
  Last Updated : 2026
 - - - - - - - - - - - - - - - - - - - - - */
 
+/* CONTAINER */
+#container { background: transparent !important; border: none !important; }
+#logo { display: none !important; }
 
-/* ============================================================
-   CONTAINER & CHROME
-   ============================================================ */
+/* FORM HEADER */
+.wufoo .info { border-bottom: 1px solid #D9D9D9 !important; background: transparent !important; }
+.wufoo .info h2 { font-size: 26px !important; font-weight: 700 !important; color: #3F3F3F !important; }
+.wufoo .info div { font-size: 16px !important; color: #3F3F3F !important; }
 
-body#public #container {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
+/* SECTION HEADINGS */
+.wufoo .section h3 { font-size: 18px !important; font-weight: 700 !important; color: #3F3F3F !important; background: transparent !important; }
 
-body#public h1#logo {
-  display: none !important;
-}
+/* LABELS */
+.wufoo label.desc, .wufoo legend.desc { font-size: 16px !important; font-weight: 700 !important; color: #3F3F3F !important; }
+.wufoo label.choice { font-size: 16px !important; color: #3F3F3F !important; }
+.wufoo li span label, .wufoo li div label { font-size: 13px !important; color: #3F3F3F !important; }
+.wufoo .req { color: #DE3D95 !important; }
 
-/* Form title and description */
-body#public .wufoo .info h2 {
-  font-size: 26px !important;
-  font-weight: 700 !important;
-  color: #3F3F3F !important;
-  margin-bottom: 6px !important;
-}
-
-body#public .wufoo .info div {
-  font-size: 16px !important;
-  color: #3F3F3F !important;
-}
-
-body#public .wufoo .info {
-  border-bottom: 1px solid #D9D9D9 !important;
-  padding-bottom: 16px !important;
-  margin-bottom: 20px !important;
-  background: transparent !important;
-}
-
-/* Section headings */
-body#public .wufoo .section h3 {
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  color: #3F3F3F !important;
-  background: transparent !important;
-  margin-bottom: 4px !important;
-}
-
-body#public .wufoo .section div {
-  font-size: 15px !important;
-  color: #3F3F3F !important;
-}
-
-
-/* ============================================================
-   LABELS
-   ============================================================ */
-
-body#public .wufoo label.desc,
-body#public .wufoo legend.desc {
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  color: #3F3F3F !important;
-  margin-bottom: 5px !important;
-}
-
-body#public .wufoo li span label,
-body#public .wufoo li div label {
-  font-size: 13px !important;
-  color: #3F3F3F !important;
-  margin-top: 4px !important;
-  display: block !important;
-}
-
-body#public .wufoo .req {
-  color: #DE3D95 !important;
-  font-weight: 700 !important;
-}
-
-body#public .wufoo label.choice {
-  font-size: 16px !important;
-  color: #3F3F3F !important;
-  margin-left: 6px !important;
-}
-
-
-/* ============================================================
-   INPUTS, TEXTAREAS, SELECTS
-   ============================================================ */
-
-body#public .wufoo input.text,
-body#public .wufoo textarea.textarea,
-body#public .wufoo select.select {
+/* INPUTS */
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select {
   background: #FFFFFF !important;
-  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(0,0,0,0.15) !important;
   border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
   color: #3F3F3F !important;
   font-size: 16px !important;
   padding: 10px 15px !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
   -webkit-appearance: none !important;
   appearance: none !important;
-  box-shadow: none !important;
 }
 
-body#public .wufoo input.text:focus,
-body#public .wufoo textarea.textarea:focus,
-body#public .wufoo select.select:focus {
+.wufoo input.text:focus,
+.wufoo textarea.textarea:focus,
+.wufoo select.select:focus {
   border-color: #00B6EA !important;
   outline: none !important;
-  box-shadow: 0 0 0 2px rgba(0, 182, 234, 0.15) !important;
+  box-shadow: 0 0 0 2px rgba(0,182,234,0.15) !important;
 }
 
-body#public .wufoo textarea.textarea {
-  min-height: 120px !important;
-  resize: vertical !important;
-}
+.wufoo textarea.textarea { min-height: 120px !important; resize: vertical !important; }
+.wufoo li.focused { background: transparent !important; }
 
-/* Focused row */
-body#public .wufoo li.focused {
-  background: transparent !important;
-}
-
-
-/* ============================================================
-   INSTRUCTIONS
-   ============================================================ */
-
-body#public .wufoo p.instruct,
-body#public .wufoo .instruct {
+/* INSTRUCTIONS */
+.wufoo p.instruct, .wufoo .instruct {
   background: #EBEFF5 !important;
   border: none !important;
   border-left: 3px solid #00B6EA !important;
   border-radius: 0 !important;
   padding: 10px 14px !important;
-  margin-top: 6px !important;
 }
+.wufoo .instruct small { font-size: 14px !important; color: #3F3F3F !important; }
 
-body#public .wufoo .instruct small {
-  font-size: 14px !important;
-  color: #3F3F3F !important;
-  line-height: 1.5 !important;
-}
-
-
-/* ============================================================
-   RADIO & CHECKBOX
-   ============================================================ */
-
-body#public .wufoo input.radio,
-body#public .wufoo input.checkbox {
-  accent-color: #00B6EA !important;
-  width: 16px !important;
-  height: 16px !important;
-  cursor: pointer !important;
-  vertical-align: middle !important;
-}
-
-
-/* ============================================================
-   SUBMIT BUTTON
-   ============================================================ */
-
-body#public .wufoo input.btTxt.submit,
-body#public .wufoo input#saveForm {
+/* SUBMIT BUTTON */
+.wufoo input.btTxt.submit {
   background: #00B6EA !important;
+  background-color: #00B6EA !important;
   color: #FFFFFF !important;
   border: none !important;
   border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   padding: 12px 24px !important;
   cursor: pointer !important;
+  box-shadow: none !important;
   -webkit-appearance: none !important;
   appearance: none !important;
-  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
 
-body#public .wufoo input.btTxt.submit:hover,
-body#public .wufoo input#saveForm:hover {
+.wufoo input.btTxt.submit:hover {
   background: #DE3D95 !important;
+  background-color: #DE3D95 !important;
 }
 
+/* BUTTONS ROW */
+.wufoo li.buttons { margin-top: 20px !important; background: transparent !important; border: none !important; }
 
-/* ============================================================
-   BUTTONS ROW
-   ============================================================ */
-
-body#public .wufoo li.buttons {
-  margin-top: 20px !important;
-  padding-top: 0 !important;
-  background: transparent !important;
-  border: none !important;
-}
-
-
-/* ============================================================
-   ERROR STATES
-   ============================================================ */
-
-body#public .wufoo .errBoxHead,
-body#public .wufoo .errBoxBody {
-  background: #fff0f5 !important;
-  border: 1px solid #DE3D95 !important;
-  border-radius: 0 !important;
-  color: #3F3F3F !important;
-  padding: 10px 14px !important;
-  margin-bottom: 14px !important;
-  font-size: 15px !important;
-}
-
-body#public .wufoo .field.error {
-  border-color: #DE3D95 !important;
-}
-
-body#public .wufoo .error small {
-  color: #DE3D95 !important;
-  font-size: 13px !important;
-  display: block !important;
-  margin-top: 4px !important;
-}
+/* ERRORS */
+.wufoo .errBoxHead, .wufoo .errBoxBody { background: #fff0f5 !important; border: 1px solid #DE3D95 !important; border-radius: 0 !important; color: #3F3F3F !important; }
+.wufoo .field.error { border-color: #DE3D95 !important; }
+.wufoo .error small { color: #DE3D95 !important; }
