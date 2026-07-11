@@ -54,6 +54,15 @@ html { background-image: none; background-color: #ffffff; }
   -webkit-appearance: none;
 }
 
+
+.wufoo textarea.textarea {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  resize: vertical !important;
+}
+
+
 .wufoo input.btTxt.submit:hover {
   background: #DE3D95;
   background-color: #DE3D95;
