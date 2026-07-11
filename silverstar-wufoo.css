@@ -21,6 +21,10 @@ html { background-image: none; background-color: #ffffff; }
 .wufoo .instruct { border: none; border-left: 3px solid #00B6EA; }
 .wufoo input.text, .wufoo textarea.textarea, .wufoo select.select { border: 1px solid rgba(0,0,0,0.15); border-radius: 0; -webkit-border-radius: 0; box-shadow: none; -webkit-box-shadow: none; padding: 10px 15px; }
 
+/* Sizing */
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; }
+.wufoo textarea.textarea { resize: vertical !important; }
+
 /* Typography */
 .wufoo .info h2 { font-size: 160%; font-family: inherit; color: #3F3F3F; }
 .wufoo .info div { font-size: 95%; font-family: inherit; color: #3F3F3F; }
@@ -53,15 +57,6 @@ html { background-image: none; background-color: #ffffff; }
   text-shadow: none;
   -webkit-appearance: none;
 }
-
-
-.wufoo textarea.textarea {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  resize: vertical !important;
-}
-
 
 .wufoo input.btTxt.submit:hover {
   background: #DE3D95;
