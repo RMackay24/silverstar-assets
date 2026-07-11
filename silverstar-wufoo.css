@@ -4,90 +4,62 @@
  Last Updated : 2026
 - - - - - - - - - - - - - - - - - - - - - */
 
-/* CONTAINER */
-#container { background: transparent !important; border: none !important; }
-#logo { display: none !important; }
+/* Logo */
+#logo { display: none; }
 
-/* FORM HEADER */
-.wufoo .info { border-bottom: 1px solid #D9D9D9 !important; background: transparent !important; }
-.wufoo .info h2 { font-size: 26px !important; font-weight: 700 !important; color: #3F3F3F !important; }
-.wufoo .info div { font-size: 16px !important; color: #3F3F3F !important; }
+/* Backgrounds */
+html { background-image: none; background-color: #ffffff; }
+#logo { background-image: none; background-color: #ffffff; }
+#container { background: #ffffff; }
+.wufoo input.text, .wufoo textarea.textarea { background: #ffffff; }
+.wufoo .focused { background: #f0f9fd; }
+.wufoo .instruct { background-color: #EBEFF5; }
 
-/* SECTION HEADINGS */
-.wufoo .section h3 { font-size: 18px !important; font-weight: 700 !important; color: #3F3F3F !important; background: transparent !important; }
+/* Borders */
+#container { border: 0 solid #D9D9D9; }
+.wufoo .info { border-bottom: 1px solid #D9D9D9; }
+.wufoo .instruct { border: none; border-left: 3px solid #00B6EA; }
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select { border: 1px solid rgba(0,0,0,0.15); border-radius: 0; -webkit-border-radius: 0; box-shadow: none; -webkit-box-shadow: none; padding: 10px 15px; }
 
-/* LABELS */
-.wufoo label.desc, .wufoo legend.desc { font-size: 16px !important; font-weight: 700 !important; color: #3F3F3F !important; }
-.wufoo label.choice { font-size: 16px !important; color: #3F3F3F !important; }
-.wufoo li span label, .wufoo li div label { font-size: 13px !important; color: #3F3F3F !important; }
-.wufoo .req { color: #DE3D95 !important; }
+/* Typography */
+.wufoo .info h2 { font-size: 160%; font-family: inherit; color: #3F3F3F; }
+.wufoo .info div { font-size: 95%; font-family: inherit; color: #3F3F3F; }
+.wufoo .section h3 { font-size: 110%; font-family: inherit; background: #ffffff; color: #3F3F3F; }
+.wufoo .section div { font-size: 85%; font-family: inherit; color: #3F3F3F; }
+.wufoo label.desc, .wufoo legend.desc { font-size: 95%; font-family: inherit; color: #3F3F3F; font-weight: bold; }
+.wufoo li div, .wufoo li div label, .wufoo li span label { font-family: inherit; color: #3F3F3F; }
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice { font-size: 100%; font-family: inherit; color: #3F3F3F; }
+.wufoo label.choice { color: #3F3F3F; }
+.wufoo .instruct { font-size: 80%; font-family: inherit; color: #3F3F3F; }
 
-/* INPUTS */
-.wufoo input.text,
-.wufoo textarea.textarea,
-.wufoo select.select {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(0,0,0,0.15) !important;
-  border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-  color: #3F3F3F !important;
-  font-size: 16px !important;
-  padding: 10px 15px !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-}
+/* Required asterisk */
+.wufoo .req { color: #DE3D95; }
 
-.wufoo input.text:focus,
-.wufoo textarea.textarea:focus,
-.wufoo select.select:focus {
-  border-color: #00B6EA !important;
-  outline: none !important;
-  box-shadow: 0 0 0 2px rgba(0,182,234,0.15) !important;
-}
-
-.wufoo textarea.textarea { min-height: 120px !important; resize: vertical !important; }
-.wufoo li.focused { background: transparent !important; }
-
-/* INSTRUCTIONS */
-.wufoo p.instruct, .wufoo .instruct {
-  background: #EBEFF5 !important;
-  border: none !important;
-  border-left: 3px solid #00B6EA !important;
-  border-radius: 0 !important;
-  padding: 10px 14px !important;
-}
-.wufoo .instruct small { font-size: 14px !important; color: #3F3F3F !important; }
-
-/* SUBMIT BUTTON */
+/* Submit button */
 .wufoo input.btTxt.submit {
-  background: #00B6EA !important;
-  background-color: #00B6EA !important;
-  color: #FFFFFF !important;
-  border: none !important;
-  border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  padding: 12px 24px !important;
-  cursor: pointer !important;
-  box-shadow: none !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  text-shadow: none !important;
-  -webkit-box-shadow: none !important;
+  background: #00B6EA;
+  background-color: #00B6EA;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 100%;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  -webkit-appearance: none;
 }
 
 .wufoo input.btTxt.submit:hover {
-  background: #DE3D95 !important;
-  background-color: #DE3D95 !important;
+  background: #DE3D95;
+  background-color: #DE3D95;
 }
 
-/* BUTTONS ROW */
-.wufoo li.buttons { margin-top: 20px !important; background: transparent !important; border: none !important; }
-
-/* ERRORS */
-.wufoo .errBoxHead, .wufoo .errBoxBody { background: #fff0f5 !important; border: 1px solid #DE3D95 !important; border-radius: 0 !important; color: #3F3F3F !important; }
-.wufoo .field.error { border-color: #DE3D95 !important; }
-.wufoo .error small { color: #DE3D95 !important; }
+/* Error states */
+.wufoo .errBoxHead, .wufoo .errBoxBody { background: #fff0f5; border: 1px solid #DE3D95; color: #3F3F3F; }
+.wufoo .field.error { border-color: #DE3D95; }
+.wufoo .error small { color: #DE3D95; }
